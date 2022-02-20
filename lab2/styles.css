@@ -1,0 +1,57 @@
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {
+    background-color: #098f8f;
+    color: #0B0B0B;
+}
+
+tr:nth-child(1):hover {
+    color: #098f8f;
+    background-color: #0B0B0B;
+}
+
+tr:nth-child(2) {
+    background-color: #f5f509;
+    color: #696969;
+}
+
+tr:nth-child(2):hover {
+    color: #f5f509;
+    background-color: #696969;
+}
+
+td {
+    height: 30px;
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+.shifted-row {
+    position: relative;
+    height: 30px;
+}
+
+.shifted-cell {
+    position: absolute;
+    height: 60px;
+    border: none;
+}
+
+.img-frame {
+    margin-top: 40px;
+    border: 1px solid black;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+}
