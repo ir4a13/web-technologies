@@ -1,0 +1,61 @@
+.bottom_banner {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  max-height: 60vh;
+  margin: 0 auto;
+  align-items: center;
+
+  > div {
+    flex: 30%;
+
+    &:first-child {
+      img {
+        max-width: 350px;
+        margin-top: 80px;
+      }
+    }
+
+    > img {
+      width: 100%;
+    }
+  }
+
+
+  &__central-img {
+    width: auto;
+    max-width: 400px;
+  }
+
+  &_tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &_tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &-text {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: right;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+
+      &:hover, &.active {
+        color: white;
+        background-color: dodgerblue;
+      }
+    }
+
+    &-img {
+      width: 100px;
+      margin-left: 40px;
+    }
+  }
+}

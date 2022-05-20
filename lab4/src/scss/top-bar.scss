@@ -1,0 +1,47 @@
+.top-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 8px 32px;
+
+  .top-bar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .language-dropdown {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-right: 32px;
+
+    &__option {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      cursor: pointer;
+
+      img {
+        height: 24px;
+        margin-right: 10px;
+      }
+    }
+
+    svg {
+      height: 10px;
+      fill: white;
+    }
+  }
+}

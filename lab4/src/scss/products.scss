@@ -1,0 +1,79 @@
+.products_section {
+  width: 90vw;
+  margin: 80px auto;
+
+  .products_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #696969;
+
+    .products_tabs {
+      display: flex;
+
+      li {
+        list-style: none;
+        padding: 0 16px;
+        font-size: 20px;
+        color: #696969;
+        cursor: pointer;
+
+        &.active, &:hover {
+          color: orangered;
+        }
+      }
+    }
+  }
+
+  .products_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    flex: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .products_title {
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .products_price {
+      font-size: 22px;
+
+      &-current {
+        font-weight: bold;
+        margin-right: 12px;
+      }
+
+      &-previous {
+        text-decoration: line-through;
+        color: red;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .products_stars {
+      display: flex;
+      margin: 16px 0;
+
+      svg {
+        height: 20px;
+        margin: 4px;
+        fill: lightgrey;
+
+        &.highlighted {
+          fill: sandybrown;
+        }
+      }
+    }
+  }
+}

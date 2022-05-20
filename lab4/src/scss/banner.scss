@@ -1,0 +1,27 @@
+.banner {
+  background-color: #FFF7D8;
+  position: relative;
+  width: 90vw;
+  margin: 140px auto;
+  height: 600px;
+
+  &_man {
+    height: 727px;
+    position: absolute;
+    top: -127px;
+  }
+
+  &_shirts {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    height: 180px;
+  }
+
+  &_text-box {
+    position: absolute;
+    left: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
